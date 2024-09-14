@@ -6,6 +6,9 @@ import {
   crypto,
   gamercave,
   onepiece,
+  mythic,
+  red2,
+  mythic2,
 } from "../assets";
 
 export const navLinks = [
@@ -28,10 +31,6 @@ const services = [
     title: "Web Developer",
     icon: web,
   },
-  // {
-  //   title: "React Native Developer",
-  //   icon: mobile,
-  // },
   {
     title: "Backend Developer",
     icon: backend,
@@ -47,6 +46,35 @@ const services = [
 ];
 
 const projects = [
+  {
+    name: "Mythical Realm",
+    description:
+      "A Netflix-like Platform for Fantasy, Horror, and Space Story Lovers.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mythic2,
+    source_code_link: "https://github.com/Bot-code-2003/Mythical_Realm",
+  },
   {
     name: "Onepiece Blog",
     description:
@@ -77,34 +105,9 @@ const projects = [
     source_code_link: "https://github.com/Bot-code-2003/One-piece",
   },
   {
-    name: "Gamers Cave",
+    name: "Red Thread",
     description:
-      "This site show cases top 6 games of all available genres, and details of each game.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "gray-text-gradient",
-      },
-      {
-        name: "html",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gamercave,
-    source_code_link: "https://github.com/Bot-code-2003/Gamers-Cave",
-  },
-  {
-    name: "Crypto Insights",
-    description:
-      "Crypto Insights is your go-to platform to check real-time data for the best cryptocurrencies available",
+      "A Social media site where users can post, like, comment and browse.",
     tags: [
       {
         name: "react",
@@ -112,19 +115,23 @@ const projects = [
       },
       {
         name: "redux",
-        color: "blue-text-gradient",
+        color: "purple-text-gradient",
       },
       {
-        name: "html",
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDB",
         color: "orange-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: crypto,
-    source_code_link: "https://github.com/Bot-code-2003/CryptoInsights",
+    image: red2,
+    source_code_link: "https://github.com/Bot-code-2003/RedThread",
   },
 ];
 
