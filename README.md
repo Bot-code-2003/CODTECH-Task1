@@ -13,7 +13,7 @@ A 3D responsive personal portfolio showcasing my skills, projects, and experienc
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, React.js, Three.js
+- **Frontend:** HTML, CSS, JavaScript, React.js, TailwindCSS, Spline 3D
 - **Tools:** Webpack, Babel, SASS/SCSS, Git
 - **Contact Form:** EmailJS
 
