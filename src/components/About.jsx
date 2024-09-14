@@ -7,42 +7,27 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const About = () => {
-  const ServiceCard = ({ index, title, icon }) => {
-    return (
-      <Tilt className="xs:w-[250px] w-full">
-        <motion.div
-          variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-          className="aqua-royal-blue-gradient p-[3px] rounded-[20px] shadow-card"
-        >
-          <div className="min-h-[280px] bg-tertiary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col">
-            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-            <h3 className="font-bold text-center text-white text-[20px]">
-              {title}
-            </h3>
-          </div>
-        </motion.div>
-      </Tilt>
-    );
-  };
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
-      </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 leading-7 text-secondary max-w-3xl"
-      >
-        I am a skilled software developer with experience Javascript, and
-        expertise in frame works like React, NodeJS, ExpressJS, MongoDB. I am
-        passionate about creating efficient and user-friendly applications that
-        meet the needs of clients. Lets connect and build something together.
-      </motion.p>
-      <div className="flex flex-wrap gap-10 mt-20">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+      <h1 className={`${styles.sectionHeadText}`}>Overview</h1>
+      <div className="flex flex-col justify-center">
+        <h1 className="text-lg mb-4">
+          I am a skilled software developer with experience Javascript, and
+          expertise in frame works like React, NodeJS, ExpressJS, MongoDB. I am
+          passionate about creating efficient and user-friendly applications
+          that meet the needs of clients. Lets connect and build something
+          together.
+        </h1>
+        <div className="flex gap-2 justify-between flex-wrap">
+          {services.map((service) => (
+            <div className="bg-gray-800 sm:w-[270px] w-full rounded-sm p-5">
+              <div className="flex items-center justify-between">
+                <h1>{service.title}</h1>
+                <img src={service.icon} width={50} height={50} alt="" />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
